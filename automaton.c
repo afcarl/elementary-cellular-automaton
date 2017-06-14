@@ -12,9 +12,6 @@ void print_grid(uint8_t grid[NROWS][NCOLS], FILE* ofp)
 {
     int i, j;
 
-    fprintf(ofp, "P1\n");
-    fprintf(ofp, "%d %d\n", NROWS-1, NCOLS-2);
-
     for (i = 0; i < NROWS; i++) {
         for (j = 1; j < NCOLS-1; j++) {
             fprintf(ofp, "%d ", grid[i][j]);
